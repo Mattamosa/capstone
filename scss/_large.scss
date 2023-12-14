@@ -1,0 +1,117 @@
+header,
+main {
+  max-width: 1240px;
+  margin: auto;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+header {
+  grid-template-columns: 51px auto auto;
+  margin-top: 1rem;
+} // header
+
+/*---- START OF NAVIGATION STUFF -------*/
+nav {
+  justify-self: end;
+  button {
+    display: none;
+  }
+  ul,
+  ul.open {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    width: auto;
+    margin: 0;
+    border-radius: 0;
+  } // end ul
+
+  ul li {
+    border: none;
+  }
+
+  ul li a {
+    color: #333;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-left: 0.2rem;
+    transition: all 0.5s ease;
+  } // end anchor
+
+  ul li a:not(.active):hover {
+    background-color: #eee;
+    color: #0b0a3e;
+  }
+
+  ul li.active a {
+    color: #b23f61;
+  }
+
+  ul li.active a:hover {
+    color: #b23f61;
+  }
+} // end navigation
+
+/*------- HERO START-------*/
+
+div#mainWrapper main div.hero {
+  div {
+    line-height: 0.4rem;
+    padding-bottom: 0.8rem;
+    bottom: 0;
+    height: 7rem;
+    width: 75rem;
+    margin-bottom: 5.2rem;
+    h3 {
+      margin-top: 7rem;
+      margin-left: 0;
+      margin-right: 15rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      text-align: left;
+    }
+  }
+}
+.hero h3 span {
+  display: block;
+}
+
+/*---- MAIN -------*/
+main h1 {
+  margin-left: 0;
+}
+
+/*---- START OF CARDS -------*/
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0.8rem;
+  margin-top: 0.4rem;
+  overflow-x: auto;
+}
+
+.cards section {
+  width: 25%;
+  margin-right: 1.7rem;
+  margin-top: 0.3rem;
+}
+
+.cards section:last-child {
+  margin-right: 0;
+}
+
+/*---- START OF CLIENTS -------*/
+div.clients {
+  justify-content: space-evenly;
+}
+
+/*---- START OF FOOTER -------*/
+#addresses {
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-left: 16rem;
+}
