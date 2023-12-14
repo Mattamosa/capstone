@@ -161,9 +161,9 @@ div#mainWrapper main h1 {
     border-width: 0.3rem;
     h3 {
       color: #070707;
-      font-weight: $normalWeight;
+      font-weight: $boldWeight;
       line-height: 1.1rem;
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
     p {
       margin: 0;
@@ -227,7 +227,7 @@ section ul li {
   padding-left: 1.3rem;
   line-height: 1.5;
   color: #565656;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 section ul li::before {
